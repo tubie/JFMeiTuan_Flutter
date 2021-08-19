@@ -50,6 +50,11 @@ flutter:
      - res/image/ecommerce/ecommerce.png
      - res/image/message/message.png
      - res/image/mine/mine.png
+     - res/image/ecommerce/icon_eat.png
+     - res/image/ecommerce/icon_fruit.png
+     - res/image/ecommerce/icon_market.png
+     - res/image/ecommerce/icon_hotel.png
+     - res/image/ecommerce/calendar.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
