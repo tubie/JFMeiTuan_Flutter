@@ -18,7 +18,7 @@ class _FeaturedWidget extends State<FeaturedWidget> {
       child: Column(
         children: [
           Container(
-            color: Colors.amber,
+            color: Colors.orange,
             child: Text('精选'),
             alignment: Alignment.centerLeft,
           ),
