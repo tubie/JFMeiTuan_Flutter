@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meituanflutter/src/base/BaseScaffoldPage.dart';
 import 'package:meituanflutter/src/ecommerce/view/ClassificationWidget.dart';
+import 'package:meituanflutter/src/ecommerce/view/FeaturedWidget.dart';
 
 class ECommercePage extends StatefulWidget {
   ECommercePage({
@@ -21,9 +22,13 @@ class _ECommercePageState extends State<ECommercePage> {
       titleBar: _createTitleBar(),
       body: Column(
         children: [
+
           Container(
             height: 100,
             child: ClassificationWidget(),),
+          Container(
+            height: 180,
+            child: FeaturedWidget(),),
         ],
       ),
     );
