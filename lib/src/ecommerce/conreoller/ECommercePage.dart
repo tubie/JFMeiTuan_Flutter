@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meituanflutter/src/base/BaseScaffoldPage.dart';
 import 'package:meituanflutter/src/ecommerce/view/ClassificationWidget.dart';
 import 'package:meituanflutter/src/ecommerce/view/FeaturedWidget.dart';
+import 'package:meituanflutter/src/ecommerce/view/PagingWidget.dart';
 
 class ECommercePage extends StatefulWidget {
   ECommercePage({
@@ -29,6 +30,8 @@ class _ECommercePageState extends State<ECommercePage> {
           Container(
             height: 180,
             child: FeaturedWidget(),),
+
+          Expanded(child: PagingWidget()),
         ],
       ),
     );
