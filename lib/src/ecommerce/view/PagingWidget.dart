@@ -17,6 +17,7 @@ class _PagingWidget extends State<PagingWidget>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
         body: TabBarView(
           controller: _tabController,
           children: <Widget>[
@@ -38,7 +39,10 @@ class _PagingWidget extends State<PagingWidget>
           ],
         ),
         appBar: AppBar(
+          backgroundColor: Colors.orange,
+          toolbarHeight:50.0,
           bottom: TabBar(
+            isScrollable: true,
               indicatorColor: Colors.white,
               indicatorSize: TabBarIndicatorSize.label,
               unselectedLabelStyle: TextStyle(
@@ -59,8 +63,10 @@ class _PagingWidget extends State<PagingWidget>
                 Tab(
                   text: '新闻',
                 ),
+
               ]),
-        ));
+        )
+    );
   }
 
   @override
