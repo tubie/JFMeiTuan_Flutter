@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
 class FeaturedItem extends StatefulWidget {
-  final String title;
+  final String name;
+  final String price;
   final String imagePath;
 
   FeaturedItem({
     Key key,
-    this.title,
-    this.imagePath,
+    this.name,
+    this.imagePath, this.price,
   }) : super(key: key);
 
   @override
@@ -30,7 +31,7 @@ class _FeaturedItem extends State<FeaturedItem> {
           Padding(
             padding: EdgeInsets.only(top: 10, bottom: 10),
             child: Text(
-              widget.title,
+              widget.name,
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
@@ -39,7 +40,7 @@ class _FeaturedItem extends State<FeaturedItem> {
             ),
           ),
           Text(
-            widget.title,
+            widget.price,
             style: TextStyle(color: Colors.red, fontSize: 12),
           )
         ],

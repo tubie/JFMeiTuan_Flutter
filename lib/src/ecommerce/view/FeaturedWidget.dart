@@ -27,39 +27,56 @@ class _FeaturedWidget extends State<FeaturedWidget> {
               scrollDirection: Axis.horizontal,
               children: [
                 FeaturedItem(
-                  title: '吃货必点',
+                  name: '吃货必点',
+                  price: '9.9',
                   imagePath: 'res/image/ecommerce/icon_eat.png',
                 ),
                 FeaturedItem(
-                  title: '吃货必点',
+                  name: '吃货必点',
+                  price: '9.9',
+
                   imagePath: 'res/image/ecommerce/icon_eat.png',
                 ),
                 FeaturedItem(
-                  title: '吃货必点',
+                  name: '吃货必点',
+                  price: '9.9',
+
                   imagePath: 'res/image/ecommerce/icon_eat.png',
                 ),
                 FeaturedItem(
-                  title: '吃货必点',
+                  name: '吃货必点',
+                  price: '9.9',
+
                   imagePath: 'res/image/ecommerce/icon_eat.png',
                 ),
                 FeaturedItem(
-                  title: '吃货必点',
+                  name: '吃货必点',
+                  price: '9.9',
+
                   imagePath: 'res/image/ecommerce/icon_eat.png',
                 ),
                 FeaturedItem(
-                  title: '吃货必点',
+                  name: '吃货必点',
+                  price: '9.9',
+
                   imagePath: 'res/image/ecommerce/icon_eat.png',
                 ),
                 FeaturedItem(
-                  title: '吃货必点',
+                  name: '吃货必点',
+                  price: '9.9',
+
                   imagePath: 'res/image/ecommerce/icon_eat.png',
                 ),
                 FeaturedItem(
-                  title: '吃货必点',
+                  name: '吃货必点',
+                  price: '9.9',
+
                   imagePath: 'res/image/ecommerce/icon_eat.png',
                 ),
                 FeaturedItem(
-                  title: '吃货必点',
+                  name: '吃货必点',
+                  price: '9.9',
+
                   imagePath: 'res/image/ecommerce/icon_eat.png',
                 ),
               ],
