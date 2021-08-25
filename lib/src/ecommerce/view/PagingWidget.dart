@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:meituanflutter/src/ecommerce/view/ClassificationWidget.dart';
 import 'package:meituanflutter/src/ecommerce/view/FeaturedWidget.dart';
@@ -71,9 +70,8 @@ class _PagingWidget extends State<PagingWidget>
                   ),
                 ),
               ),
-              bottom: TabBar(
-                isScrollable: true,
-                  controller: _tabController, tabs: [
+              bottom:
+                  TabBar(isScrollable: true, controller: _tabController, tabs: [
                 Tab(text: "aaa"),
                 Tab(text: "bbb"),
                 Tab(text: "ccc"),

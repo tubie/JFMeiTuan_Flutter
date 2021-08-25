@@ -18,8 +18,14 @@ class _PagingView extends State<PagingView> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(0),
-      child: ListView(
+      padding: EdgeInsets.only(left: 5,right: 5,top: 5),
+      child: GridView(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2, //列数
+          mainAxisSpacing: 5.0, //行间距
+          crossAxisSpacing: 5.0, //列间距
+          childAspectRatio: 0.8, //宽高比 宽相对于高的倍数
+        ),
         children: [
           Container(height: 100,child: Text('234567'),color: Colors.red,),
           Container(height: 100,child: Text('234567'),color: Colors.grey,),
@@ -29,7 +35,6 @@ class _PagingView extends State<PagingView> {
           Container(height: 100,child: Text('234567'),color: Colors.white,),
           Container(height: 100,child: Text('234567'),color: Colors.red,),
           Container(height: 100,child: Text('234567'),color: Colors.green,),
-
 
         ],
       ),
