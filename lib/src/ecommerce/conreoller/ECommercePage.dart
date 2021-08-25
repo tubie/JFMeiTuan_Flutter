@@ -23,7 +23,6 @@ class _ECommercePageState extends State<ECommercePage> {
       titleBar: _createTitleBar(),
       body: Column(
         children: [
-
           Container(
             height: 100,
             child: ClassificationWidget(),),
@@ -32,6 +31,8 @@ class _ECommercePageState extends State<ECommercePage> {
             child: FeaturedWidget(),),
 
           Expanded(child: PagingWidget()),
+
+
         ],
       ),
     );
@@ -46,7 +47,7 @@ class _ECommercePageState extends State<ECommercePage> {
     return AppBar(
       elevation: 0,
       backgroundColor: Colors.amber,
-      title: Text('fasfas'),
+      title: Text('电商'),
     );
   }
 }

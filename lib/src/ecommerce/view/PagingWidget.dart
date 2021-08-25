@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:meituanflutter/src/ecommerce/view/FeaturedItem.dart';
 import 'package:meituanflutter/src/ecommerce/view/PagingView.dart';
 
 class PagingWidget extends StatefulWidget {
