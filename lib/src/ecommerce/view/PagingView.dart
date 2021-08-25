@@ -19,13 +19,16 @@ class _PagingView extends State<PagingView> {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.all(0),
-      child: Column(
+      child: ListView(
         children: [
-          Padding(padding: EdgeInsets.only(top: 10,bottom: 10, left: 10,right: 10),child: Image(
-              width: 48,
-              height: 48,
-              image: AssetImage(widget.imagePath)),),
-          Text(widget.title)
+          Container(height: 100,child: Text('234567'),color: Colors.red,),
+          Container(height: 100,child: Text('234567'),color: Colors.grey,),
+          Container(height: 100,child: Text('234567'),color: Colors.orange,),
+          Container(height: 100,child: Text('234567'),color: Colors.green,),
+          Container(height: 100,child: Text('234567'),color: Colors.grey,),
+          Container(height: 100,child: Text('234567'),color: Colors.white,),
+
+
         ],
       ),
     );

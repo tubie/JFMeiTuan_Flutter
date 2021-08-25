@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meituanflutter/src/ecommerce/view/FeaturedItem.dart';
+import 'package:meituanflutter/src/ecommerce/view/PagingView.dart';
 
 class PagingWidget extends StatefulWidget {
   PagingWidget({
@@ -17,23 +18,19 @@ class _PagingWidget extends State<PagingWidget>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
         body: TabBarView(
           controller: _tabController,
           children: <Widget>[
-            FeaturedItem(
-              name: '吃货必点',
-              price: '9.9',
+            PagingView(
+              title: '吃货必点',
               imagePath: 'res/image/ecommerce/icon_eat.png',
             ),
-            FeaturedItem(
-              name: '吃货必点',
-              price: '9.9',
+            PagingView(
+              title: '吃货必点',
               imagePath: 'res/image/ecommerce/icon_eat.png',
             ),
-            FeaturedItem(
-              name: '吃货必点',
-              price: '9.9',
+            PagingView(
+              title: '吃货必点',
               imagePath: 'res/image/ecommerce/icon_eat.png',
             ),
           ],
