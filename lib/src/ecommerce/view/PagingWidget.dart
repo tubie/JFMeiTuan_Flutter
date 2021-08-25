@@ -1,4 +1,7 @@
+
 import 'package:flutter/material.dart';
+import 'package:meituanflutter/src/ecommerce/view/ClassificationWidget.dart';
+import 'package:meituanflutter/src/ecommerce/view/FeaturedWidget.dart';
 import 'package:meituanflutter/src/ecommerce/view/PagingView.dart';
 
 class PagingWidget extends StatefulWidget {
@@ -13,62 +16,91 @@ class PagingWidget extends StatefulWidget {
 class _PagingWidget extends State<PagingWidget>
     with SingleTickerProviderStateMixin {
   TabController _tabController;
+  ScrollController _scrollViewController;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: NestedScrollView(
         body: TabBarView(
           controller: _tabController,
           children: <Widget>[
-            PagingView(
-              title: '吃货必点',
-              imagePath: 'res/image/ecommerce/icon_eat.png',
-            ),
-            PagingView(
-              title: '吃货必点',
-              imagePath: 'res/image/ecommerce/icon_eat.png',
-            ),
-            PagingView(
-              title: '吃货必点',
-              imagePath: 'res/image/ecommerce/icon_eat.png',
-            ),
+            PagingView(),
+            PagingView(),
+            PagingView(),
+            PagingView(),
+            PagingView(),
+            PagingView(),
+            PagingView(),
+            PagingView(),
+            PagingView(),
+            PagingView(),
+            PagingView(),
+            PagingView(),
+            PagingView(),
+            PagingView(),
           ],
         ),
-        appBar: AppBar(
-          backgroundColor: Colors.orange,
-          toolbarHeight:50.0,
-          bottom: TabBar(
-            isScrollable: true,
-              indicatorColor: Colors.white,
-              indicatorSize: TabBarIndicatorSize.label,
-              unselectedLabelStyle: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w500,
-              ),
-              unselectedLabelColor: Colors.white54,
-              labelColor: Colors.white,
-              labelStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
-              controller: _tabController,
-              tabs: <Widget>[
-                Tab(
-                  text: '电影',
-                ),
-                Tab(
-                  text: '读书',
-                ),
-                Tab(
-                  text: '新闻',
-                ),
+        controller: _scrollViewController,
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+          return <Widget>[
+            SliverAppBar(
+              pinned: true,
+              floating: true,
+              expandedHeight: 300,
+              flexibleSpace: FlexibleSpaceBar(
+                collapseMode: CollapseMode.pin,
+                background: Container(
+                  //头部整个背景颜色
+                  height: double.infinity,
+                  color: Color(0xffcccccc),
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+//                        color: Colors.white,
+                        height: 100,
+                        child: ClassificationWidget(),
+                      ),
+                      Container(
+                        height: 200,
+//                        color: Colors.white,
 
+                        child: FeaturedWidget(),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              bottom: TabBar(
+                isScrollable: true,
+                  controller: _tabController, tabs: [
+                Tab(text: "aaa"),
+                Tab(text: "bbb"),
+                Tab(text: "ccc"),
+                Tab(text: "ccc"),
+                Tab(text: "ccc"),
+                Tab(text: "ccc"),
+                Tab(text: "ccc"),
+                Tab(text: "aaa"),
+                Tab(text: "bbb"),
+                Tab(text: "ccc"),
+                Tab(text: "ccc"),
+                Tab(text: "ccc"),
+                Tab(text: "ccc"),
+                Tab(text: "ccc"),
               ]),
-        )
+            ),
+          ];
+        },
+      ),
     );
   }
 
   @override
   initState() {
+    _scrollViewController = ScrollController(initialScrollOffset: 0.0);
     _tabController = TabController(
-      length: 3,
+      length: 14,
       vsync: this,
     );
     super.initState();

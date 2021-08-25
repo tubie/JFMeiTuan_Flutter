@@ -21,20 +21,7 @@ class _ECommercePageState extends State<ECommercePage> {
   Widget build(BuildContext context) {
     return BaseScaffoldPage(
       titleBar: _createTitleBar(),
-      body: Column(
-        children: [
-          Container(
-            height: 100,
-            child: ClassificationWidget(),),
-          Container(
-            height: 180,
-            child: FeaturedWidget(),),
-
-          Expanded(child: PagingWidget()),
-
-
-        ],
-      ),
+      body: PagingWidget(),
     );
   }
 

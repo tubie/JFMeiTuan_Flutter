@@ -27,6 +27,10 @@ class _PagingView extends State<PagingView> {
           Container(height: 100,child: Text('234567'),color: Colors.green,),
           Container(height: 100,child: Text('234567'),color: Colors.grey,),
           Container(height: 100,child: Text('234567'),color: Colors.white,),
+          Container(height: 100,child: Text('234567'),color: Colors.red,),
+          Container(height: 100,child: Text('234567'),color: Colors.green,),
+
+
         ],
       ),
     );
