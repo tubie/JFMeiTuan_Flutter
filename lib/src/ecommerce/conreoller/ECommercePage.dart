@@ -33,7 +33,7 @@ class _ECommercePageState extends State<ECommercePage> {
   PreferredSizeWidget _createTitleBar() {
     return AppBar(
       elevation: 0,
-      backgroundColor: Colors.amber,
+      backgroundColor: Colors.orange,
       title: Text('电商'),
     );
   }

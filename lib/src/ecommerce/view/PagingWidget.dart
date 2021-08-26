@@ -52,7 +52,7 @@ class _PagingWidget extends State<PagingWidget>
                 background: Container(
                   //头部整个背景颜色
                   height: double.infinity,
-                  color: Color(0xffcccccc),
+                  color: Colors.white,
                   child: Column(
                     children: <Widget>[
                       Container(
@@ -71,22 +71,28 @@ class _PagingWidget extends State<PagingWidget>
                 ),
               ),
               bottom:
-                  TabBar(isScrollable: true, controller: _tabController, tabs: [
-                Tab(text: "aaa"),
-                Tab(text: "bbb"),
-                Tab(text: "ccc"),
-                Tab(text: "ccc"),
-                Tab(text: "ccc"),
-                Tab(text: "ccc"),
-                Tab(text: "ccc"),
-                Tab(text: "aaa"),
-                Tab(text: "bbb"),
-                Tab(text: "ccc"),
-                Tab(text: "ccc"),
-                Tab(text: "ccc"),
-                Tab(text: "ccc"),
-                Tab(text: "ccc"),
-              ]),
+                  PreferredSize(
+                    preferredSize: Size.fromHeight(48),
+                    child: Material(
+                      color: Colors.orange,
+                      child: TabBar(isScrollable: true, controller: _tabController, tabs: [
+                        Tab(text: "热卖"),
+                        Tab(text: "生鲜"),
+                        Tab(text: "食品"),
+                        Tab(text: "百货"),
+                        Tab(text: "数码"),
+                        Tab(text: "美妆"),
+                        Tab(text: "服饰"),
+                        Tab(text: "运动"),
+                        Tab(text: "母婴"),
+                        Tab(text: "宠物"),
+                        Tab(text: "ccc"),
+                        Tab(text: "ccc"),
+                        Tab(text: "ccc"),
+                        Tab(text: "ccc"),
+                      ]),
+                    ),
+                  )
             ),
           ];
         },
