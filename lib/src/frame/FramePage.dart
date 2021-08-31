@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meituanflutter/src/base/BaseScaffoldPage.dart';
 import 'package:meituanflutter/src/ecommerce/conreoller/ECommercePage.dart';
-import 'package:meituanflutter/src/home/HomePage.dart';
+import 'package:meituanflutter/src/home/controller/HomePage.dart';
 import 'package:meituanflutter/src/message/controller/MessagePage.dart';
 import 'package:meituanflutter/src/mine/MinePage.dart';
 

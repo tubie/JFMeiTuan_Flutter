@@ -25,8 +25,6 @@ class _ClassificationWidget extends State<ClassificationWidget> {
           ClassificationItem(title: '省钱日历',imagePath: 'res/image/ecommerce/calendar.png',),
           ClassificationItem(title: '热卖排行榜',imagePath: 'res/image/ecommerce/icon_eat.png',),
           ClassificationItem(title: '分类',imagePath: 'res/image/ecommerce/icon_eat.png',),
-
-
         ],
       ),
     );
