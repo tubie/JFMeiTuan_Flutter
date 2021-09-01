@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:meituanflutter/src/ecommerce/view/ClassificationItem.dart';
 
-class HomeTopClassificationWidget extends StatefulWidget {
-  HomeTopClassificationWidget({
+class HomeToolWidget extends StatefulWidget {
+  HomeToolWidget({
     Key key,
   }) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _HomeTopClassificationWidget();
+  State<StatefulWidget> createState() => _HomeToolWidget();
 }
 
-class _HomeTopClassificationWidget extends State<HomeTopClassificationWidget> {
+class _HomeToolWidget extends State<HomeToolWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(

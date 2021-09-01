@@ -27,14 +27,14 @@ class _PagingView extends State<PagingView> {
           childAspectRatio: 0.8, //宽高比 宽相对于高的倍数
         ),
         children: [
-          Container(height: 100,child: Text('234567'),color: Colors.red,),
-          Container(height: 100,child: Text('234567'),color: Colors.grey,),
-          Container(height: 100,child: Text('234567'),color: Colors.orange,),
-          Container(height: 100,child: Text('234567'),color: Colors.green,),
-          Container(height: 100,child: Text('234567'),color: Colors.grey,),
-          Container(height: 100,child: Text('234567'),color: Colors.white,),
-          Container(height: 100,child: Text('234567'),color: Colors.red,),
-          Container(height: 100,child: Text('234567'),color: Colors.green,),
+          Container(height: 100,child: Text('1'),color: Colors.red,),
+          Container(height: 100,child: Text('2'),color: Colors.grey,),
+          Container(height: 100,child: Text('3'),color: Colors.orange,),
+          Container(height: 100,child: Text('4'),color: Colors.green,),
+          Container(height: 100,child: Text('5'),color: Colors.grey,),
+          Container(height: 100,child: Text('6'),color: Colors.white,),
+          Container(height: 100,child: Text('7'),color: Colors.red,),
+          Container(height: 100,child: Text('8'),color: Colors.green,),
 
         ],
       ),

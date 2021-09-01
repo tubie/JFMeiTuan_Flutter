@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:meituanflutter/src/ecommerce/view/ClassificationWidget.dart';
 import 'package:meituanflutter/src/ecommerce/view/FeaturedWidget.dart';
 import 'package:meituanflutter/src/ecommerce/view/PagingView.dart';
-
-import 'HomeTopClassificationWidget.dart';
+import 'package:meituanflutter/src/home/view/HomeClassificationWidget.dart';
+import 'package:meituanflutter/src/home/view/HomeToolWidget.dart';
 
 class HomePagingWidget extends StatefulWidget {
   HomePagingWidget({
@@ -37,7 +36,7 @@ class _HomePagingWidget extends State<HomePagingWidget>
             SliverAppBar(
                 pinned: true,
                 floating: true,
-                expandedHeight: 300,
+                expandedHeight: 400,
                 flexibleSpace: FlexibleSpaceBar(
                   collapseMode: CollapseMode.pin,
                   background: Container(
@@ -49,31 +48,34 @@ class _HomePagingWidget extends State<HomePagingWidget>
                         Container(
 //                        color: Colors.white,
                           height: 100,
-                          child: HomeTopClassificationWidget(),
+                          child: HomeToolWidget(),
                         ),
                         Container(
-                          height: 200,
+                          height: 300,
 //                        color: Colors.white,
-
-                          child: FeaturedWidget(),
+                          child: Padding(
+                            padding: EdgeInsets.only(bottom: 50),
+                            child: HomeClassificationWidget(),
+                          ),
                         ),
                       ],
                     ),
                   ),
                 ),
-                bottom:
-                PreferredSize(
-                  preferredSize: Size.fromHeight(30),
+                bottom: PreferredSize(
+                  preferredSize: Size.fromHeight(50),
                   child: Material(
                     color: Colors.orange,
-                    child: TabBar(isScrollable: true, controller: _tabController, tabs: [
-                      Tab(text: "热卖"),
-                      Tab(text: "生鲜"),
-                      Tab(text: "食品"),
-                    ]),
+                    child: TabBar(
+                        isScrollable: true,
+                        controller: _tabController,
+                        tabs: [
+                          Tab(text: "热卖"),
+                          Tab(text: "生鲜"),
+                          Tab(text: "食品"),
+                        ]),
                   ),
-                )
-            ),
+                )),
           ];
         },
       ),
