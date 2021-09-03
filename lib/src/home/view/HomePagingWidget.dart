@@ -58,12 +58,13 @@ class _HomePagingWidget extends State<HomePagingWidget>
                             child: HomeClassificationWidget(),
                           ),
                         ),
+
                       ],
                     ),
                   ),
                 ),
                 bottom: PreferredSize(
-                  preferredSize: Size.fromHeight(50),
+                  preferredSize: Size(300,50),
                   child: Material(
                     color: Colors.orange,
                     child: TabBar(

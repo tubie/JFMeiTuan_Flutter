@@ -30,9 +30,6 @@ class _HomePageState extends State<HomePage> {
   initState() {
     super.initState();
   }
-
-
-
   PreferredSizeWidget _createTitleBar() {
     return AppBar(
       elevation: 0,

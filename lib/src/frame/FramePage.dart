@@ -3,7 +3,7 @@ import 'package:meituanflutter/src/base/BaseScaffoldPage.dart';
 import 'package:meituanflutter/src/ecommerce/conreoller/ECommercePage.dart';
 import 'package:meituanflutter/src/home/controller/HomePage.dart';
 import 'package:meituanflutter/src/message/controller/MessagePage.dart';
-import 'package:meituanflutter/src/mine/MinePage.dart';
+import 'package:meituanflutter/src/mine/controller/MinePage.dart';
 
 class FramePage extends StatefulWidget {
   FramePage({Key key, this.title, this.selectedIndex = 0}) : super(key: key);
